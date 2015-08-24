@@ -1,0 +1,41 @@
+.container-fluid.grey.lighten-4
+  .section
+    .container
+      .row
+        .col.s12
+          h4.light  Welcome Recruiter
+          h5  Search Now
+      .row
+        .col.s12.m3.center
+            h5.light Select Skills
+            .input-field.col
+              select(ng-model="skills")
+                option(value="0" disabled="true" selected="true") Choose your option
+                option(value="1") Business Development
+                option(value="2") Market Research
+                option(value="3") Advertising
+              label Skills
+        .col.s12.m3.center
+            h5.light Select Experience Range
+            p.range-field
+              input(type="range" id="test5" min="0" max="30")
+        .col.s12.m3.center
+            h5.light Select Salary Range
+            p.range-field
+              input(type="range" id="test5" min="10000" max="30000000")
+        .col.s12.m3.center
+            h5.light Select Location
+            .input-field.col
+              select(ng-model="skills")
+                option(value="0" disabled="true" selected="true") Choose your option
+                option(value="1") Gurgaon
+                option(value="2") Bangalore
+                option(value="3") Hyderabad
+              label Location
+      .row
+        .col.s12.center
+          a.waves-effect.waves-light.btn-large.indigo.center
+            i.material-icons.right search
+            | Find Candidates
+
+

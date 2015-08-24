@@ -1,0 +1,45 @@
+doctype
+html
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no")
+
+    title splurr
+
+    link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css")
+    link(rel="stylesheet" href="/main.css")
+  body.theme
+    nav.indigo.text-white(role='navigation')
+      .nav-wrapper.container
+        a.brand-logo(href="/") splurr
+        ul.right.hide-on-med-and-down
+          li
+            a(href="#about") How It Works?
+          li
+            a(href="#about") About Us
+          li
+            a(href="/login") My Account
+
+        a.button-collapse(href="#" data-activates="nav-mobile" )
+          i.material-icons menu
+    != yield
+    footer.page-footer.orange.darken-2.text-white
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text
+            p.grey-text.text-lighten-4
+          .col.l3.s12
+            h5.white-text
+            p.grey-text.text-lighten-4
+          .col.l3.s12
+            h5.white-text
+            p.grey-text.text-lighten-4
+      .footer-copyright.orange.darken-4.text-white
+        .container
+          | splurr © 2015. All Rights Reserved.
+
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js')
